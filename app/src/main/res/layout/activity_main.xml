@@ -19,12 +19,12 @@
         app:layout_constraintVertical_bias="0.311" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/count_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Count To"
-        android:inputType="textPersonName"
+        android:inputType="number|textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -33,14 +33,15 @@
         app:layout_constraintVertical_bias="0.472" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Show Counter"
+        android:onClick="onShowCounterClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/count_textview"
         app:layout_constraintVertical_bias="0.198" />
 </androidx.constraintlayout.widget.ConstraintLayout>
